@@ -2,7 +2,7 @@
 
 import axios from 'axios';
 
-const BASE_URL = 'https://api.spotify.com/v1';
+const BASE_URL = 'https://accounts.spotify.com/api/token';
 let accessToken: string | null = null;
 
 const spotifyApi = axios.create({
