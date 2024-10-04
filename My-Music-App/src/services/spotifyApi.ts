@@ -31,11 +31,11 @@ export const search = (query: string, type: string = 'track,album,artist') => {
 };
 
 export const getFeaturedPlaylists = () => {
-  return spotifyApi.get('/browse/featured-playlists');
+  return spotifyApi.get('https://api.spotify.com/v1/browse/featured-playlists');
 };
 
 export const getRecentlyPlayed = () => {
-  return spotifyApi.get('/me/player/recently-played');
+  return spotifyApi.get('');
 };
 
 export const getAlbum = (albumId: string) => {

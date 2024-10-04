@@ -10,7 +10,7 @@ const Header: React.FC = () => {
 
   const handleLogin = () => {
     const clientId = process.env.REACT_APP_SPOTIFY_CLIENT_ID;
-    const redirectUri = process.env.REACT_APP_REDIRECT_URI || 'http://localhost:3000/callback';
+    const redirectUri = process.env.REACT_APP_REDIRECT_URI || 'http://localhost:5174/callback';
     const scopes = 'user-read-private user-read-email user-read-recently-played user-top-read user-follow-read user-follow-modify playlist-read-private playlist-read-collaborative playlist-modify-public';
 
     window.location.href = `https://accounts.spotify.com/authorize?client_id=${clientId}&response_type=code&redirect_uri=${redirectUri}&scope=${encodeURIComponent(scopes)}`;

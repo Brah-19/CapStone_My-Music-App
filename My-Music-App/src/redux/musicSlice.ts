@@ -13,7 +13,7 @@ export const fetchAccessToken = createAsyncThunk(
       body: new URLSearchParams({
         grant_type: 'authorization_code',
         code: code,
-        redirect_uri: process.env.REACT_APP_REDIRECT_URI || 'http://localhost:3000/callback',
+        redirect_uri: process.env.REACT_APP_REDIRECT_URI || 'http://localhost:5174/callback',
       }),
     });
     const data = await response.json();
